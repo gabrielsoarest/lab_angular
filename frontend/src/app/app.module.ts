@@ -11,6 +11,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
  import{MatListModule} from '@angular/material/list';
+import { CreateComponent } from './component/crud/create/create.component';
+import { ReadComponent } from './component/crud/read/read.component';
+import { UpdateComponent } from './component/crud/update/update.component';
+import { DeleteComponent } from './component/crud/delete/delete.component';
 
 
 
@@ -19,7 +23,11 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     AppComponent,
     HeaderComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    CreateComponent,
+    ReadComponent,
+    UpdateComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,

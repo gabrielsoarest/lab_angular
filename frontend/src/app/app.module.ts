@@ -17,6 +17,7 @@ import { ReadComponent } from './component/crud/read/read.component';
 import { UpdateComponent } from './component/crud/update/update.component';
 import { DeleteComponent } from './component/crud/delete/delete.component';
 import { HomeComponent } from './views/home/home.component';
+import { ProdutoCrudComponent } from './views/produto-crud/produto-crud.component';
 
 
 
@@ -30,7 +31,8 @@ import { HomeComponent } from './views/home/home.component';
     ReadComponent,
     UpdateComponent,
     DeleteComponent,
-    HomeComponent
+    HomeComponent,
+    ProdutoCrudComponent
   ],
   imports: [
     BrowserModule,

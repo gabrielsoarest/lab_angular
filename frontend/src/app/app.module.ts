@@ -8,13 +8,15 @@ import { NavComponent } from './component/template/nav/nav.component';
 import { FooterComponent } from './component/template/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatSidenavModule} from '@angular/material/sidenav';
- import{MatListModule} from '@angular/material/list';
+import { MatToolbarModule} from '@angular/material/toolbar';
+import { MatSidenavModule} from '@angular/material/sidenav';
+import { MatListModule} from '@angular/material/list';
+import { MatCardModule} from '@angular/material/card';
 import { CreateComponent } from './component/crud/create/create.component';
 import { ReadComponent } from './component/crud/read/read.component';
 import { UpdateComponent } from './component/crud/update/update.component';
 import { DeleteComponent } from './component/crud/delete/delete.component';
+import { HomeComponent } from './views/home/home.component';
 
 
 
@@ -27,7 +29,8 @@ import { DeleteComponent } from './component/crud/delete/delete.component';
     CreateComponent,
     ReadComponent,
     UpdateComponent,
-    DeleteComponent
+    DeleteComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { DeleteComponent } from './component/crud/delete/delete.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

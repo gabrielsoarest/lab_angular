@@ -6,3 +6,10 @@
 .sidenav i {
     padding-right: 10px;
 }
+
+.content{
+    padding: 16px;
+    color: black;
+    background-color: #FFF;
+    
+}

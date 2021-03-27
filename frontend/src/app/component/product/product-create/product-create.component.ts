@@ -17,4 +17,8 @@ export class ProductCreateComponent implements OnInit {
     this.productService.showMessage('Produto salvo')
   }
 
+  salvarProduto():void{
+    this.productService.salvarProduto()
+  }
+
 }

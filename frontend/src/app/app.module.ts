@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './views/home/home.component';
 import { ProdutoCrudComponent } from './views/produto-crud/produto-crud.component';
 import { ProductCreateComponent } from './component/product/product-create/product-create.component';
+import { HttpClientModule } from '@angular/common/http';
 /*material*/
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatSidenavModule} from '@angular/material/sidenav';
@@ -19,7 +20,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
  
 
 
@@ -48,7 +49,9 @@ import {MatInputModule} from '@angular/material/input';
     MatButtonModule,
     MatSnackBarModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,6 +12,8 @@ export class ProductService {
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
+ // const baseUrl='http://localhost:3001/product'
+
   showMessage(msg:string):void{
     this.snackBar.open(msg,'',{
       duration:3000,
@@ -20,7 +22,7 @@ export class ProductService {
     })
   }
 
-  salvarProduto():Observable<Product>{
-    return this.http.put()
-  }
+  //createProduto():Observable<Product>{
+   // return this.http.('http://localhost:3001/product')
+ // }
 }

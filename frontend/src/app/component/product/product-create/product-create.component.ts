@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../product.model';
 import { ProductService } from '../product.service';
 
 @Component({
@@ -8,7 +9,12 @@ import { ProductService } from '../product.service';
 })
 export class ProductCreateComponent implements OnInit {
 
-  constructor(private productService:ProductService) { }
+  
+  product: Product = {
+    name:'',
+    price:null
+  }
+  constructor(private productService:ProductService, ) { }
 
   ngOnInit(): void {
   }
@@ -18,7 +24,7 @@ export class ProductCreateComponent implements OnInit {
   }
 
   salvarProduto():void{
-    this.productService.salvarProduto()
+  //  this.productService.createProduto(this.product).subscribe()
   }
 
 }

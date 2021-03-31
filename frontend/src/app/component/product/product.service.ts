@@ -12,7 +12,7 @@ export class ProductService {
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
- // const baseUrl='http://localhost:3001/product'
+ baseUrl='http://localhost:3001/product'
 
   showMessage(msg:string):void{
     this.snackBar.open(msg,'',{
@@ -22,7 +22,7 @@ export class ProductService {
     })
   }
 
-  //createProduto():Observable<Product>{
-   // return this.http.('http://localhost:3001/product')
- // }
+  create (product:Product): Observable<Product>{
+    return this.http.post<Product>(this.baseUrl,product)
+  }
 }

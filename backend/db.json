@@ -14,6 +14,46 @@
       "name": "Mouse",
       "price": "120,00",
       "id": 3
+    },
+    {
+      "name": "dsd",
+      "price": "22",
+      "id": 4
+    },
+    {
+      "name": "TEste",
+      "price": "3",
+      "id": 5
+    },
+    {
+      "name": "Televisao Samsung 50",
+      "price": "3.000,00",
+      "id": 6
+    },
+    {
+      "name": "Iphone 7",
+      "price": "18000",
+      "id": 7
+    },
+    {
+      "name": "Iphone 4",
+      "price": "18000",
+      "id": 8
+    },
+    {
+      "name": "dd",
+      "price": "3",
+      "id": 9
+    },
+    {
+      "name": "Gabinete",
+      "price": "253,00",
+      "id": 10
+    },
+    {
+      "name": "",
+      "price": null,
+      "id": 11
     }
   ]
 }

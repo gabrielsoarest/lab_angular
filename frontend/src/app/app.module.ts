@@ -21,10 +21,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
- 
-
-
-
+import { ProductReadComponent } from './component/product/product-read/product-read.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { ProductRead2Component } from './component/product/product-read2/product-read2.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,10 @@ import { MatInputModule } from '@angular/material/input';
     FooterComponent,
     HomeComponent,
     ProdutoCrudComponent,
-    ProductCreateComponent
+    ProductCreateComponent,
+    ProductReadComponent,
+    ProductRead2Component,
+  
     
   ],
   imports: [
@@ -50,7 +54,10 @@ import { MatInputModule } from '@angular/material/input';
     MatSnackBarModule,
     FormsModule,
     MatInputModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
     
   ],
   providers: [],

@@ -11,6 +11,8 @@ import { HomeComponent } from './views/home/home.component';
 import { ProdutoCrudComponent } from './views/produto-crud/produto-crud.component';
 import { ProductCreateComponent } from './component/product/product-create/product-create.component';
 import { HttpClientModule } from '@angular/common/http';
+//import { ActivatedRoute } from '@angular/router';
+
 /*material*/
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatSidenavModule} from '@angular/material/sidenav';
@@ -26,6 +28,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { ProductRead2Component } from './component/product/product-read2/product-read2.component';
+import { ProductUpdateComponent } from './component/product/product-update/product-update.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +41,7 @@ import { ProductRead2Component } from './component/product/product-read2/product
     ProductCreateComponent,
     ProductReadComponent,
     ProductRead2Component,
+    ProductUpdateComponent,
   
     
   ],
@@ -57,7 +61,8 @@ import { ProductRead2Component } from './component/product/product-read2/product
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    //ActivatedRoute
     
   ],
   providers: [],

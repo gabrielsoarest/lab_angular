@@ -29,4 +29,5 @@ export class ProductCreateComponent implements OnInit {
     this.router.navigate(['/produto'])})
   }
  
+ 
 }

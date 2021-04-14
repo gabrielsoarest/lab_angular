@@ -15,14 +15,15 @@ export class ProductUpdateComponent implements OnInit {
     private router : Router
   ) { }
 
-    
+    product :Product
 
 
   ngOnInit(): void {
   }
 
   update():void{
-    this.productService.readById
+    this.productService.readById("1").subscribe(()=>this.product)
+
   }
 
   cancel():void{

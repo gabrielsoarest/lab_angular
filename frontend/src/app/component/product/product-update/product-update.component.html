@@ -4,12 +4,12 @@
     </mat-card-title>
     <form>
         <mat-form-field>
-            <input matInput placeholder ="Nome">
+            <input matInput placeholder ="Nome" [(ngModel)]="product.name" name="name">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder ="Preço (R$)" >
+            <input matInput placeholder ="Preço (R$)">
         </mat-form-field>
     </form>
-    <button mat-raised-button class="btnExcluir" (click)="update()"> Alterar</button> 
+    <button mat-raised-button class="btnAlterar" (click)="update()"> Alterar</button> 
     <button mat-raised-button class="" (click)="cancel()"> Cancelar</button> 
 </mat-card>

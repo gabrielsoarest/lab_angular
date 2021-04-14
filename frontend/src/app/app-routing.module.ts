@@ -4,23 +4,28 @@ import { HomeComponent } from './views/home/home.component';
 import { ProductCreateComponent } from './component/product/product-create/product-create.component';
 import { ProdutoCrudComponent } from './views/produto-crud/produto-crud.component';
 import { ProductUpdateComponent } from './component/product/product-update/product-update.component';
+import { ProductDeleteComponent } from './component/product/product-delete/product-delete.component';
 
 
 const routes: Routes = [
   {
-    path:'',
+    path:"",
     component: HomeComponent},
   {
-    path:'produto',
+    path:"product",
     component:ProdutoCrudComponent
   },
   {
-    path:'product/create',
+    path:"product/create",
     component:ProductCreateComponent
   },
   {
-    path:'product/update/:id',
+    path:"product/update/:id",
     component:ProductUpdateComponent
+  },
+  {
+    path:"product/delete/:id",
+    component:ProductDeleteComponent
   }
   
   ];

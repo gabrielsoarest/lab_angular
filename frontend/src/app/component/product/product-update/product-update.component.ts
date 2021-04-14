@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Product } from '../product.model';
 import { ProductService } from '../product.service';
 
@@ -10,13 +11,21 @@ import { ProductService } from '../product.service';
 export class ProductUpdateComponent implements OnInit {
 
   constructor(
-    private productService : ProductService
+    private productService : ProductService,
+    private router : Router
   ) { }
+
+    
+
 
   ngOnInit(): void {
   }
 
   update():void{
-    this.productService
+    this.productService.readById
+  }
+
+  cancel():void{
+    this.router.navigate(['/product'])
   }
 }

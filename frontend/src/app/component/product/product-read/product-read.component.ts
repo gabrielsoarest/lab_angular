@@ -23,4 +23,8 @@ export class ProductReadComponent implements OnInit {
     })
   }
 
+  read():void{
+    console.log("entrou no read")
+  }
+
 }

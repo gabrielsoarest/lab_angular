@@ -9,6 +9,9 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  title="Controle de Estoque"
+  user = "Gabriel Soares"
+
   ngOnInit(): void {
   }
 

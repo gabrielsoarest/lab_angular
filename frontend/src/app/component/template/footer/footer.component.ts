@@ -11,5 +11,6 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  footerTitle= "Desenvolvido por GInfo Technology."
 
 }

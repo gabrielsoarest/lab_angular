@@ -15,16 +15,21 @@ export class ProductUpdateComponent implements OnInit {
     private router : Router
   ) { }
 
-    product :Product
+    product:Product ={
+      name:'',
+      price:null
+    }
 
 
   ngOnInit(): void {
+  
+    this.productService.readById("4").subscribe(product=>{
+    this.product=product })
   }
-
   update():void{
-    this.productService.readById("1").subscribe(()=>this.product)
 
   }
+
 
   cancel():void{
     this.router.navigate(['/product'])

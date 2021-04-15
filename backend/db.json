@@ -39,6 +39,11 @@
       "name": "Fone Phillips",
       "price": "250.00",
       "id": 8
+    },
+    {
+      "name": "Televisao",
+      "price": "3500,00",
+      "id": 9
     }
   ]
 }

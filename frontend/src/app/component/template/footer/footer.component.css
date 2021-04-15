@@ -3,6 +3,7 @@
     bottom:0;
     display: flex;
     justify-content: center;
+    background-color: #1e2933;
 }
 
 .footer span {
@@ -13,4 +14,5 @@
 .p{
     font-size: 1rem;
     font-weight: 300;
+    color:aliceblue
 }

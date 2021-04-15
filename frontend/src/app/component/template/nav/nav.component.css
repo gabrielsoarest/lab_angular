@@ -1,5 +1,5 @@
 .sidenav{
-    background-color: #3F51B5;
+    background-color:#cc3e58;
     width:200px;
 }
 
@@ -10,11 +10,16 @@
 
 .content{
     padding: 16px;
-    color: black;
-    background-color: #FFF;
+   
+    background-color: #ebeff2;
     
 }
 
 .sidenav a{
     color:#FFF
 }
+.container{
+    background-color: #ebeff2;
+    
+}
+

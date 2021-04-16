@@ -44,6 +44,11 @@
       "name": "Televisao",
       "price": "3500,00",
       "id": 9
+    },
+    {
+      "name": "PS4",
+      "price": "3000",
+      "id": 10
     }
   ]
 }

@@ -30,6 +30,8 @@ import { MatSortModule } from '@angular/material/sort';
 import { ProductRead2Component } from './component/product/product-read2/product-read2.component';
 import { ProductUpdateComponent } from './component/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './component/product/product-delete/product-delete.component';
+import { FinanceiroComponent } from './component/financeiro/financeiro.component';
+import { LoginComponent } from './views/login/login.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,8 @@ import { ProductDeleteComponent } from './component/product/product-delete/produ
     ProductRead2Component,
     ProductUpdateComponent,
     ProductDeleteComponent,
+    FinanceiroComponent,
+    LoginComponent,
   
     
   ],

@@ -5,12 +5,19 @@ import { ProductCreateComponent } from './component/product/product-create/produ
 import { ProdutoCrudComponent } from './views/produto-crud/produto-crud.component';
 import { ProductUpdateComponent } from './component/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './component/product/product-delete/product-delete.component';
+import { LoginComponent } from './views/login/login.component';
 
 
 const routes: Routes = [
   {
     path:"",
-    component: HomeComponent},
+    component: HomeComponent
+  },
+  {
+    path:"login",
+    component: LoginComponent
+  },
+  
   {
     path:"product",
     component:ProdutoCrudComponent

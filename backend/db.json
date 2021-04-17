@@ -2,8 +2,8 @@
   "product": [
     {
       "id": 1,
-      "name": "Macbook",
-      "price": "6.000,00"
+      "name": "Dell",
+      "price": "6500"
     },
     {
       "id": 2,
@@ -42,7 +42,7 @@
     },
     {
       "name": "Televisao",
-      "price": "3500,00",
+      "price": "53000",
       "id": 9
     },
     {

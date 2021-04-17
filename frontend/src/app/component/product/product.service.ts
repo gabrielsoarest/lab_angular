@@ -36,7 +36,8 @@ export class ProductService {
     return this.http.get<Product>(url)
   }
   
-  update():Observable<Product>{
-    return null;
+  update(product:Product):Observable<Product>{
+    const url =`${this.baseUrl}/${product.id}`
+    return this.http.put<Product>(url,product)
   }
 }

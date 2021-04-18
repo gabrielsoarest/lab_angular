@@ -23,12 +23,11 @@
 }
 
 .user {
-    padding-left: 75%;
     font-size: 0.9rem;
     margin-top: 2px;
     color:#ebeff2;
     font-style: italic;
-    margin-left: 4.5rem;
+    margin-left: auto;
     margin-top: 10px;
 
 }

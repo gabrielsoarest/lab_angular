@@ -31,7 +31,8 @@ import { ProductRead2Component } from './component/product/product-read2/product
 import { ProductUpdateComponent } from './component/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './component/product/product-delete/product-delete.component';
 import { FinanceiroComponent } from './component/financeiro/financeiro.component';
-import { LoginComponent } from './views/login/login.component';
+import { LoginComponent } from './component/login/login.component';
+import { AuthService } from './component/login/auth.service';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,7 @@ import { LoginComponent } from './views/login/login.component';
     ProductDeleteComponent,
     FinanceiroComponent,
     LoginComponent,
-  
+   
     
   ],
   imports: [
@@ -71,7 +72,7 @@ import { LoginComponent } from './views/login/login.component';
     //ActivatedRoute
     
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

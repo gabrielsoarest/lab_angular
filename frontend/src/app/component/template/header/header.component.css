@@ -17,10 +17,15 @@
     
 }
 
-.header .title-group{
+.header {
     padding-left: 20px;
     color:#ebeff2
 }
+
+.title-group{
+    color:#ebeff2
+}
+
 
 .user {
     font-size: 0.9rem;

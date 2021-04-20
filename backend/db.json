@@ -1,31 +1,6 @@
 {
   "product": [
     {
-      "id": 1,
-      "name": "Dell",
-      "price": "6500"
-    },
-    {
-      "id": 2,
-      "name": "Teclado",
-      "price": "250,00"
-    },
-    {
-      "name": "Mouse",
-      "price": "120,00",
-      "id": 3
-    },
-    {
-      "name": "Radio",
-      "price": "400",
-      "id": 4
-    },
-    {
-      "name": "Gabriel Tavares",
-      "price": "5300",
-      "id": 5
-    },
-    {
       "name": "Cadeira Gamer",
       "price": "78",
       "id": 6
@@ -49,6 +24,11 @@
       "name": "PS4",
       "price": "3000",
       "id": 10
+    },
+    {
+      "name": "Ford KA",
+      "price": "38000",
+      "id": 11
     }
   ]
 }

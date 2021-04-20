@@ -1,0 +1,28 @@
+<div class="bg-left">
+<h1 class ="title-left">
+    Organiza Aê! ;)
+</h1>
+
+<h3 class="subtitle-left">
+    A gente te ajuda a você se organizar melhor
+</h3>
+</div> 
+    <div class="bg-right">
+        <h1 class="title-right">
+            Login
+        </h1>
+        <form class="form">
+     
+        <mat-form-field>
+            <input matInput placeholder ="Nome" [(ngModel)]="usuario.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder ="Senha" type="password" [(ngModel)]="usuario.senha" name="senha">
+            </mat-form-field>
+            
+        </form>
+        <button mat-raised-button (click)="login()" class="login-button"> Entrar</button> 
+        <button mat-raised-button  class="subscribe-button"> Cadastre-se</button> 
+    
+    </div>
+

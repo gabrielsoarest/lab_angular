@@ -41,7 +41,7 @@ export class ProductService {
   }
 
   deleteProduct(product:Product):Observable<Product>{
-    
+    console.log("entou no delete")
     const url =`${this.baseUrl}/${product.id}`
    return this.http.delete<Product>(url)
 

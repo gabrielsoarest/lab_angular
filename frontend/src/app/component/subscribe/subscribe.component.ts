@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SubscribeService } from './subscribe.service';
+import { User } from './user.model';
 
 @Component({
   selector: 'app-subscribe',
@@ -7,13 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubscribeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private userService:SubscribeService) { }
 
+  user : User = new User
+  
   ngOnInit(): void {
   }
 
   subscribe():void{
-    
+    console.log(this.user)
+    this.userService.subscribeUser(this.user).subscribe(()=>{
+      this.user
+    })
   }
 
+  
 }

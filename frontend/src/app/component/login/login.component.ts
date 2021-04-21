@@ -9,7 +9,12 @@ import { Usuario } from './usuario.model';
 })
 export class LoginComponent implements OnInit {
 
-  usuario : Usuario = new Usuario ();
+  title=' Organiza Aê! ;)'
+  subtitle='A gente ajuda a você se organizar melhor'
+  cadastrar = 'Ainda não sou cadastrado'
+  acessar ='Continuar'
+  recuperarSenha='Esqueci minha senha'
+  usuario : Usuario = new Usuario();
 
   constructor(private authService: AuthService) { }
 
@@ -20,6 +25,4 @@ export class LoginComponent implements OnInit {
     this.authService.fazerLogin(this.usuario)
   } 
 
-  title=' Organiza Aê! ;)'
-  subtitle='A gente ajuda a você se organizar melhor'
 }

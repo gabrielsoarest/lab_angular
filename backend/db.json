@@ -30,5 +30,34 @@
       "price": "38000",
       "id": 11
     }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "name": "Gabriel",
+      "email": "a.a@uk.co",
+      "password": "123"
+    },
+    {
+      "name": "TEst",
+      "email": "g.tavares1993@gmail.com",
+      "password": "22",
+      "id": 2
+    },
+    {
+      "name": "Gabriel",
+      "email": "g.tavares1993@gmail.com",
+      "password": "99809",
+      "id": 3
+    },
+    {
+      "name": "Isabela Costa",
+      "email": "g.tavares1993@gmail.com",
+      "password": "1235548",
+      "id": 4
+    },
+    {
+      "id": 5
+    }
   ]
 }

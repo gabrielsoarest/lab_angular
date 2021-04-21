@@ -1,13 +1,12 @@
 <div class="bg-left">
-<h1 class ="title-left">
-   {{title}}
-</h1>
-
-<h3 class="subtitle-left">
-    {{subtitle}}
-</h3>
+    <h1 class ="title-left">
+        {{title}}
+    </h1>
+    <h3 class="subtitle-left">
+        {{subtitle}}
+    </h3>
 </div> 
-    <div class="bg-right">
+<div class="bg-right" >
         <h1 class="title-right">
             Login
         </h1>
@@ -21,8 +20,11 @@
             </mat-form-field>
             
         </form>
-        <button mat-raised-button (click)="login()" class="login-button"> Entrar</button> 
-        <button mat-raised-button  class="subscribe-button"> Cadastre-se</button> 
-    
-    </div>
+       
+
+            <button mat-raised-button class="login-button" (click)="login()" > {{acessar}}</button> 
+            <a routerLink="/subscribe" class="subscribe-button"> {{cadastrar}}</a> 
+            <a routerLink="/subscribe" class="recoveryPassword"> {{recuperarSenha}}</a> 
+            
+</div>
 

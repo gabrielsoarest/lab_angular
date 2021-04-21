@@ -5,7 +5,9 @@
     margin-left: 35%;
     width: 30%;
 }
-
+.img-logo{
+    width: 15%;
+}
 .mat-card{
     margin-right: 5%;
     margin-left: 20%;
@@ -23,15 +25,40 @@
 }
 
 .login-button{
+    display: flex;
+    flex-direction: column;
     border-radius: 15px;
-    margin-right: 20px;
-    margin-left: 40%;
+    margin-left: 35%;
+    width: 30%;
+    padding-left: 12%;
+    
+    
 }
 
 .subscribe-button{
+    display: flex;
+    flex-direction: column;
     border-radius: 15px;
+    margin-left: 35%;
+    width: 30%;
+    padding-left: 7%;
+    color: #cc3e58;
+    margin-top: 2%;
+    
     
 }
+
+.recoveryPassword{
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    width: 30%;
+    padding-left: 7%;
+    color: #cc3e58;
+    margin-top: 2%;  
+}
+
+
 .bg-left{
     position: absolute;
     top:0%;

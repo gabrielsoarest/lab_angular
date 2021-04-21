@@ -4,15 +4,15 @@
     </mat-card-title>
     <form class="form">
         <mat-form-field appearance="outline">
-            <input matInput placeholder ="Nome" >
+            <input matInput placeholder ="Nome"[(ngModel)]="user.name" name="name" >
         </mat-form-field>
         <mat-form-field appearance="outline">
-            <input matInput placeholder ="E-mail" >
+            <input matInput placeholder ="E-mail" [(ngModel)]="user.email" name="email">
         </mat-form-field>
         <mat-form-field appearance="outline">
-            <input matInput placeholder="Senha" type="password">
+            <input matInput placeholder="Senha" [(ngModel)]="user.password" name="password" type="password">
         </mat-form-field>
     </form>
-    <button mat-raised-button class="bt-subscribe" > Cadastrar</button> 
+    <button mat-raised-button class="bt-subscribe"(click)="subscribe()" > Cadastrar</button> 
 
 </div>

@@ -6,6 +6,7 @@ import { ProdutoCrudComponent } from './views/produto-crud/produto-crud.componen
 import { ProductUpdateComponent } from './component/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './component/product/product-delete/product-delete.component';
 import { LoginComponent } from './component/login/login.component';
+import { SubscribeComponent } from './component/subscribe/subscribe.component';
 
 
 
@@ -17,6 +18,11 @@ const routes: Routes = [
   {
     path:"login",
     component: LoginComponent
+  },
+
+  {
+    path:"subscribe",
+    component: SubscribeComponent
   },
 
   {

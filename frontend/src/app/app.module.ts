@@ -33,6 +33,7 @@ import { ProductDeleteComponent } from './component/product/product-delete/produ
 import { FinanceiroComponent } from './component/financeiro/financeiro.component';
 import { LoginComponent } from './component/login/login.component';
 import { AuthService } from './component/login/auth.service';
+import { SubscribeComponent } from './component/subscribe/subscribe.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { AuthService } from './component/login/auth.service';
     ProductDeleteComponent,
     FinanceiroComponent,
     LoginComponent,
+    SubscribeComponent,
    
     
   ],

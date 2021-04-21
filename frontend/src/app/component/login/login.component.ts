@@ -19,4 +19,7 @@ export class LoginComponent implements OnInit {
   login(): void{
     this.authService.fazerLogin(this.usuario)
   } 
+
+  title=' Organiza Aê! ;)'
+  subtitle='A gente ajuda a você se organizar melhor'
 }

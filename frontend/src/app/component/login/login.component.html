@@ -1,10 +1,10 @@
 <div class="bg-left">
 <h1 class ="title-left">
-    Organiza Aê! ;)
+   {{title}}
 </h1>
 
 <h3 class="subtitle-left">
-    A gente te ajuda a você se organizar melhor
+    {{subtitle}}
 </h3>
 </div> 
     <div class="bg-right">
@@ -13,10 +13,10 @@
         </h1>
         <form class="form">
      
-        <mat-form-field>
+        <mat-form-field appearance="outline">
             <input matInput placeholder ="Nome" [(ngModel)]="usuario.nome" name="nome">
         </mat-form-field>
-        <mat-form-field>
+        <mat-form-field appearance="outline">
             <input matInput placeholder ="Senha" type="password" [(ngModel)]="usuario.senha" name="senha">
             </mat-form-field>
             

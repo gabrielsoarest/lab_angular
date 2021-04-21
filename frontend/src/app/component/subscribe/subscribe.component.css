@@ -1,0 +1,36 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.card-title{
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 5rem;
+    color: rgb(71, 71, 71);
+    margin-top: 25%;
+    
+    
+}
+
+.bt-subscribe{
+    display: flex;
+    flex-direction: column;
+    margin-left: 45%;
+    margin-top: -7%;
+    
+}
+
+.bg-right{
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height:100%;
+    background-color: aliceblue;
+}
+

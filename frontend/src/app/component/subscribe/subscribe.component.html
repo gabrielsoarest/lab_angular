@@ -13,6 +13,17 @@
             <input matInput placeholder="Senha" [(ngModel)]="user.password" name="password" type="password">
         </mat-form-field>
     </form>
-    <button mat-raised-button class="bt-subscribe"(click)="subscribe()" > Cadastrar</button> 
+    <button mat-raised-button class="bt-subscribe"(click)="subscribe()"> Cadastrar</button> 
+   
+</div>
 
+<div class ="bg-left">
+    <h1 class ="title-left">
+        {{title}}
+    </h1>
+    <h3 class="subtitle-left">
+        {{subtitle}}
+    </h3>
+    
+    <button mat-stroked-button class="login-button" routerLink="/login" > Login </button> 
 </div>

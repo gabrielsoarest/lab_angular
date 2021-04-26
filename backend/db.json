@@ -39,25 +39,10 @@
       "password": "123"
     },
     {
-      "name": "TEst",
-      "email": "g.tavares1993@gmail.com",
-      "password": "22",
+      "name": "Fabricio",
+      "email": "a.m@uk.co",
+      "password": "321123",
       "id": 2
-    },
-    {
-      "name": "Gabriel",
-      "email": "g.tavares1993@gmail.com",
-      "password": "99809",
-      "id": 3
-    },
-    {
-      "name": "Isabela Costa",
-      "email": "g.tavares1993@gmail.com",
-      "password": "1235548",
-      "id": 4
-    },
-    {
-      "id": 5
     }
   ]
 }

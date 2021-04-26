@@ -10,6 +10,8 @@ import { User } from './user.model';
 export class SubscribeComponent implements OnInit {
 
   constructor(private userService:SubscribeService) { }
+  title="Bem vindo novamente :)"
+  subtitle="Clique no botao abaixo para se logar"
 
   user : User = new User
   
@@ -19,9 +21,11 @@ export class SubscribeComponent implements OnInit {
   subscribe():void{
     console.log(this.user)
     this.userService.subscribeUser(this.user).subscribe(()=>{
-      this.user
+      this.userService.showMessage('Cadastro realizado com sucesso!')
     })
   }
+
+  
 
   
 }

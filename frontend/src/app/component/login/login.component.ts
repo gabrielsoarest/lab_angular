@@ -1,7 +1,9 @@
 import { Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { AuthService } from './auth.service';
 import { Usuario } from './usuario.model';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+
 declare var FB:any
 @Component({
   selector: 'app-login',
@@ -20,11 +22,21 @@ export class LoginComponent implements OnInit {
   loginGoogle ='Entrar com Gmail'
   loginTitle ='Login'
   
-  usuario : Usuario = new Usuario();
+  //usuario : Usuario = new Usuario();
+
+  usuario: Usuario = {
+    nome:'',
+    cpf:'',
+    email:'',
+    senha:''
+    
+  }
+
+
   
   showEsqueciSenha: boolean =false
 
-  constructor(private authService: AuthService ,private router : Router) { }
+  constructor(private authService: AuthService ,private router : Router,  public dialog: MatDialog) { }
 
   ngOnInit(): void {
    
@@ -76,6 +88,35 @@ console.log(this.showEsqueciSenha)
       }); this.router.navigate(['/product'])
 
     
+  }
+
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
+      width: '250px',
+      data: {email:this.usuario.email}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      this.usuario.email = result;
+    });
+  }
+
+}
+
+@Component({
+  selector: 'dialog-overview-example-dialog',
+  templateUrl: './reset.password.dialog.html',
+})
+export class DialogOverviewExampleDialog {
+
+  constructor(
+    public dialogRef: MatDialogRef<DialogOverviewExampleDialog>,
+    @Inject(MAT_DIALOG_DATA) public usuario: Usuario) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
   }
 
 }

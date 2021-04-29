@@ -3,9 +3,11 @@
     flex-direction: column;
     width: 40%;
     margin-left: 30%;
-    margin-bottom: 10%;
     margin-top: 10%;
+ 
 }
+
+
 
 .card-title{
     display: flex;
@@ -34,10 +36,10 @@
 }
 
 .bt-subscribe{
-    margin-left: 45%;
     border-radius: 15px;
-    width: 15%;
-    margin-top: -100%;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 2%
     
     
 }

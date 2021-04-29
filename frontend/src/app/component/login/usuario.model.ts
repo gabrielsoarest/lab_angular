@@ -1,5 +1,6 @@
-export class Usuario {
+export interface Usuario {
     nome: string;
     senha: string;
-    cpf:string;
+    cpf?:string;
+    email?:string;
 }

@@ -94,6 +94,7 @@
     right:50%;
     width:50%;
     height:100%;
+    margin-left: 60%;
     background: linear-gradient(to right, #cc3e58 0%, #ff6666 100%)
 }
 
@@ -105,6 +106,13 @@
     height:100%;
     background: linear-gradient(to right, #eff8ff 0%, #eff8ff 100%);
    
+}
+
+a{
+    text-decoration: underline;
+    color: #cc3e58;
+    margin-left: 35%;
+    
 }
 
 

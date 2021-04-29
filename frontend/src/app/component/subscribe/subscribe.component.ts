@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { SubscribeService } from './subscribe.service';
 import { User } from './user.model';
 
+
+
 @Component({
   selector: 'app-subscribe',
   templateUrl: './subscribe.component.html',
@@ -27,5 +29,6 @@ export class SubscribeComponent implements OnInit {
 
   
 
-  
 }
+
+

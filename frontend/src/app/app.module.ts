@@ -34,6 +34,7 @@ import { FinanceiroComponent } from './component/financeiro/financeiro.component
 import { LoginComponent } from './component/login/login.component';
 import { AuthService } from './component/login/auth.service';
 import { SubscribeComponent } from './component/subscribe/subscribe.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,7 @@ import { SubscribeComponent } from './component/subscribe/subscribe.component';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    //ActivatedRoute
+    MatDialogModule
     
   ],
   providers: [AuthService],

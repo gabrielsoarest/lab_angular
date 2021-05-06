@@ -14,8 +14,8 @@ export class SubscribeService {
 
    baseUrl='http://localhost:3001/user'
 
-   showMessage(msg:string):void{
-    this.snackBar.open(msg,'',{
+   showMessage(msg:string,matricula:string):void{
+    this.snackBar.open(msg,matricula,{
       duration:3000,
       horizontalPosition:"right",
       verticalPosition:"top"

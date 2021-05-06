@@ -11,6 +11,7 @@ import { HomeComponent } from './views/home/home.component';
 import { ProdutoCrudComponent } from './views/produto-crud/produto-crud.component';
 import { ProductCreateComponent } from './component/product/product-create/product-create.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
 //import { ActivatedRoute } from '@angular/router';
 
 /*material*/
@@ -32,9 +33,11 @@ import { ProductUpdateComponent } from './component/product/product-update/produ
 import { ProductDeleteComponent } from './component/product/product-delete/product-delete.component';
 import { FinanceiroComponent } from './component/financeiro/financeiro.component';
 import { LoginComponent } from './component/login/login.component';
+import {DialogOverviewExampleDialog} from './component/login/login.component'
 import { AuthService } from './component/login/auth.service';
 import { SubscribeComponent } from './component/subscribe/subscribe.component';
 import {MatDialogModule} from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -52,6 +55,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     FinanceiroComponent,
     LoginComponent,
     SubscribeComponent,
+    DialogOverviewExampleDialog
+    
    
     
   ],

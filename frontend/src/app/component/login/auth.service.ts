@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { EventEmitter, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
@@ -14,7 +15,7 @@ export class AuthService {
   showMenuEmitter = new EventEmitter<boolean>()
 
   constructor(private router : Router) { }
-
+  
 
   fazerLogin(usuario:Usuario){
     console.log('login')
@@ -26,11 +27,6 @@ export class AuthService {
       this.usuarioAutenticado = false
       this.showMenuEmitter.emit(false)
     }
-  }
-
-  resetPassword(cpf:string){
-
-    console.log('entrou no reset')
   }
 
   submitFacebook():void{
@@ -50,4 +46,10 @@ export class AuthService {
 
 
   }
+
+ 
+
+
+
+
 }

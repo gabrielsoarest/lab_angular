@@ -1,6 +1,7 @@
 export interface Usuario {
+    id:string;
     nome: string;
     senha: string;
-    cpf?:string;
-    email?:string;
+    email:string;
+    
 }

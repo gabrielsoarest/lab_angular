@@ -154,8 +154,22 @@ a{
 }
 
 .icon-div{
-padding-left: 41%;
+    padding-left: 41%;
+}
 
+.form-reset-password{
+    width: 800px;
+    height: 300px;
+}
 
+.reset-password{
+width: 300px;
+}
 
+.form-field{
+    width: 300px;
+}
+
+.bt-enviar{
+   width: 300px;
 }

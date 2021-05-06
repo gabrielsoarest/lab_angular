@@ -1,8 +1,10 @@
+import { UserService } from './user.service';
 import { Router } from '@angular/router';
 import { Component, OnInit, Inject } from '@angular/core';
 import { AuthService } from './auth.service';
 import { Usuario } from './usuario.model';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+
 
 declare var FB:any
 @Component({
@@ -25,8 +27,8 @@ export class LoginComponent implements OnInit {
   //usuario : Usuario = new Usuario();
 
   usuario: Usuario = {
+    id:'',
     nome:'',
-    cpf:'',
     email:'',
     senha:''
     
@@ -93,13 +95,17 @@ console.log(this.showEsqueciSenha)
 
   openDialog(): void {
     const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
-      width: '250px',
-      data: {email:this.usuario.email}
+     
+      data: {id:this.usuario.id}
+      
     });
+
+
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-      this.usuario.email = result;
+      this.usuario.id = result;
+      console.log(result);
     });
   }
 
@@ -108,15 +114,30 @@ console.log(this.showEsqueciSenha)
 @Component({
   selector: 'dialog-overview-example-dialog',
   templateUrl: './reset.password.dialog.html',
+  styleUrls: ['./login.component.css']
 })
 export class DialogOverviewExampleDialog {
 
+  user:Usuario={
+    id:'',
+    nome: '',
+    senha: '',
+    email:''
+  }
+
+
   constructor(
     public dialogRef: MatDialogRef<DialogOverviewExampleDialog>,
-    @Inject(MAT_DIALOG_DATA) public usuario: Usuario) {}
+    @Inject(MAT_DIALOG_DATA) public usuario: Usuario,
+    private userService:UserService ) {}
 
   onNoClick(): void {
     this.dialogRef.close();
   }
 
+  recuperarUsuario():void{
+    this.userService.recoverUser(this.usuario.id).subscribe(user =>{
+      this.user=user
+    })
+  }
 }

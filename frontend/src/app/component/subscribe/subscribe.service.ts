@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { User } from './user.model';
-
 import {MatSnackBar} from '@angular/material/snack-bar';
+import { User } from '../model/user.model';
 
 @Injectable({
   providedIn: 'root'

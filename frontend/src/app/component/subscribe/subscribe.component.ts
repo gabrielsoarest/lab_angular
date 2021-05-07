@@ -1,7 +1,8 @@
-import { Usuario } from './../login/usuario.model';
+
 import { Component, OnInit } from '@angular/core';
+import { User } from '../model/user.model';
 import { SubscribeService } from './subscribe.service';
-import { User } from './user.model';
+
 
 
 

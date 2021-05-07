@@ -1,7 +1,9 @@
+
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Usuario } from './usuario.model';
+import { User } from '../model/user.model';
+
 
 @Injectable({
   providedIn: 'root'
@@ -11,11 +13,11 @@ export class UserService {
  
   constructor( private http:HttpClient) { }
 
-  recoverUser(id:string):Observable<Usuario>{
+  recoverUser(id:string):Observable<User>{
     
     const url = `${this.baseUrl}/${id}`
     
-    return this.http.get<Usuario>(url)
+    return this.http.get<User>(url)
     
     //return null;
   }

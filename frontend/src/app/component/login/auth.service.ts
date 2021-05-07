@@ -1,8 +1,9 @@
+import { User } from './../model/user.model';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { EventEmitter, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { Usuario } from './usuario.model';
+
 declare var FB:any
 
 @Injectable({
@@ -17,9 +18,9 @@ export class AuthService {
   constructor(private router : Router) { }
   
 
-  fazerLogin(usuario:Usuario){
+  fazerLogin(user:User){
     console.log('login')
-    if(usuario.nome ==='a.a@email.com' && usuario.senha==='123'){
+    if(user.name ==='a.a@email.com' && user.password==='123'){
       this.usuarioAutenticado=true
       this.showMenuEmitter.emit(true)
       this.router.navigate(['/product'])  

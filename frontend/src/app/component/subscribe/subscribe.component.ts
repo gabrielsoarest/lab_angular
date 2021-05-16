@@ -31,8 +31,9 @@ export class SubscribeComponent implements OnInit {
   subscribe():void{
     
     this.userService.subscribeUser(this.user).subscribe(()=>{
-      this.userService.showMessage('Cadastro realizado com sucesso! Sua matricula:' , '1' ),console.log(this.user)
+     this.user = this.user
     })
+    
     console.log(this.user)
   }
 

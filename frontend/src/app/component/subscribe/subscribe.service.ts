@@ -11,7 +11,7 @@ export class SubscribeService {
 
   constructor(private http:HttpClient, private snackBar : MatSnackBar) { }
 
-   baseUrl='http://localhost:3001/user'
+   baseUrl='http://localhost:8080/user'
 
    showMessage(msg:string,matricula:string):void{
     this.snackBar.open(msg,matricula,{
